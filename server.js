@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api', Router)
-
+app.use(express.static('img'));
 
 
 app.listen(port,host,()=> console.log('Server ready'))
