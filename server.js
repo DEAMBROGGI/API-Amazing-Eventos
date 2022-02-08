@@ -12,9 +12,9 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api', Router)
-app.use(express.static('img'));
 
 
-app.listen(Host,()=> console.log('Server listening on port 4000'))
+
+app.listen(host,()=> console.log('Server listening on port 4000'))
 
 
