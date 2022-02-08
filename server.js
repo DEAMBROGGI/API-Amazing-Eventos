@@ -5,6 +5,7 @@ const Router = require('./routes/routes')
 require('./config/database')
 const app = express();
 const fs = require('fs')
+const host = "https://amazingeventsapi.herokuapp.com"
 
 //middlewares
 app.use(cors());
@@ -14,6 +15,6 @@ app.use('/api', Router)
 app.use(express.static('img'));
 
 
-app.listen('4000',()=> console.log('Server listening on port 4000'))
+app.listen(Host,()=> console.log('Server listening on port 4000'))
 
 
