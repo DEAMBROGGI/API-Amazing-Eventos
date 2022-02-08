@@ -6,6 +6,7 @@ require('./config/database')
 const app = express();
 const fs = require('fs')
 const port = process.env.PORT ||3000
+const host = process.env.HOST || '0.0.0.0'
 
 //middlewares
 app.use(cors());
@@ -15,6 +16,6 @@ app.use('/api', Router)
 
 
 
-app.listen(port,()=> console.log('Server ready'))
+app.listen(port,host,()=> console.log('Server ready'))
 
 
