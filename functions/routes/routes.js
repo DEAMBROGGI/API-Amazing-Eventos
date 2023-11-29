@@ -5,7 +5,4 @@ const {obtenerEventos, obtenerImg} = eventosControllers
 Router.route('/eventos') 
 .get(obtenerEventos)
 
-
-Router.route('/img/:id') 
-.get(obtenerImg)
 module.exports = Router

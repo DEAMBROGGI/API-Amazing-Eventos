@@ -1,5 +1,4 @@
 const Eventos = require('../models/Eventos') 
-const fs = require('fs')
 const path = require('path')
 
 const eventosControllers = {
@@ -13,19 +12,9 @@ const eventosControllers = {
             error = error
             console.error(error)
         }      
-
         res.json(
-            ...eventos, 
-            
-        )
-        
-    },
-    obtenerImg: async(req,res)=>{
-        const foto = req.params.id
-        
-       
-        res.sendFile(path.join(__dirname,`../public/img/${foto}`))
-        
+            ...eventos,           
+        )        
     },
 
 }
